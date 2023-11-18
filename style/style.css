@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --result-bg-top-Light-slate-blue: hsl(252, 100%, 67%);
+  --result-bg-bottom-Light-royal-blue: hsl(241, 81%, 54%);
+
+  --circle-top-Violet-blue: hsla(256, 72%, 46%, 1);
+  --circle-bottom-Persian-blue: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*, ::after,::before{
+    margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: 'Hanken Grotesk';
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: var(--Pale-blue);
+height: 100vh;
+width: 100%;
+}
+.container{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    width: 585px;
+    background:var(--White);
+
+}
+.result{
+    padding: 5px 45px 15px 45px;
+    background: linear-gradient(var(--result-bg-top-Light-slate-blue) ,var(--result-bg-bottom-Light-royal-blue)) ;
+    text-align: center;
+    width: 45%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.result h1{
+    color: var(--Light-lavender);
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+.result .circle{
+    margin: 0 auto;
+    border-radius: 50%;
+    text-align:  center;
+    background: linear-gradient(var(--circle-top-Violet-blue),var(--circle-bottom-Persian-blue));
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.result .circle span{
+    color: var(--White);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.result .circle p{
+    color: var(--White);
+    font-size: 0.85rem;
+    color: var(--Light-lavender);
+}
+
+.comments h2{
+    color: var(--White);
+    margin-bottom: 15px;
+}
+.comments p{
+    text-align:  center;
+    color: var(--Light-lavender);
+font-size: 0.9rem;
+}
+.summary{
+    border-radius: 0 25px 25px 0;
+    background:var(--White);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 30px;
+
+}
+.summary h1{
+    color: var(--Dark-gray-blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+.skills{
+display: flex;
+flex-direction: row;
+padding: 10px;    
+border-radius: 10px;
+border-top-color: 1px solid black;
+height: 27px;
+}
+
+.skills-section{
+    display: flex;
+    margin-top: -10px;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.8rem;
+}
+.skills.reaction{
+    color: var(--Light-red);
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 87, 87, 0.05);
+}
+
+.skills.memory{
+    color: var(--Orangey-yellow);
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 176, 31,0.05)
+}
+.skills.verbal{
+    color: var(--Green-teal);
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 189, 145,0.05)
+}
+.skills.visual{
+    color: var(--Cobalt-blue);
+    display: flex;
+    justify-content: space-between;
+    background: rgba(17, 37, 212,0.05);
+}
+.skills-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.skills-name img{
+    margin-right: 8px;
+    height: 16px;
+    width: 16px;
+}
+.skills-name p{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    color: lightslategray;
+    font-size: 0.9rem;
+}
+.score span{
+    color: #000;
+    margin-right: 7px;
+}
+button{
+    background: var(--Dark-gray-blue);
+    color: var(--White);
+    padding: 12px 60px;
+    border-radius: 50px;
+    border: none;
+}
+button:hover{
+    background: var(--result-bg-bottom-Light-royal-blue);
+    cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
